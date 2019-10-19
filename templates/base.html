@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% include "base_subsections/head.html" %}
+
+    <title>{% block title %}Kilojoule Counter{% endblock %}</title>
+  </head>
+  <body>
+    {% include "base_subsections/nav_header.html" %}
+
+    {% block "content" %}
+
+    {% endblock %}
+
+    {% include "base_subsections/footer.html" %}
+  </body>
+</html>

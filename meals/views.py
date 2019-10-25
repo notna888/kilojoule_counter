@@ -1,13 +1,11 @@
 import csv
 import os
 
-
-
 from django.http import HttpResponse
 from django.shortcuts import render
 
-from .models import *
-
+from .models import Meal, Ingredient, Ingredient_Meal
+from .forms import IngredientForm
 
 
 def all_meals(request):
@@ -52,3 +50,22 @@ def load_ingredients(request):
 
 
     return HttpResponse('Ingredients Loaded Successfully')
+
+def load_meals(request):
+    return HttpResponse('Not implimented yet')
+
+
+def edit_ingredients(request):
+    ing_form = IngredientForm()
+
+    context = {
+        'form' : ing_form,
+    }
+
+    print("blah??")
+
+    return render(
+        request=request,
+        template_name="edit_forms/ingredient_form.html",
+        context=context
+    )

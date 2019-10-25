@@ -8,9 +8,11 @@
   <body>
     {% include "base_subsections/nav_header.html" %}
 
-    {% block "content" %}
+    <section class="content">
+      {% block "content" %}
 
-    {% endblock %}
+      {% endblock %}
+    </section>
 
     {% include "base_subsections/footer.html" %}
   </body>

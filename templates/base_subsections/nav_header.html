@@ -11,14 +11,26 @@
     <c span=3 span-s=0></c>
 
     <c span-s=3>
-      <p class='dropbtn' onclick="myFunction()">Dropdown thing</p>
+      <a href="#" class='dropbtn' onclick="myFunction()" style="width 24px;">
+        <i class="material-icons" style="color:">menu</i>
+      </a>
       <div id="myDropdown" class="dropdown-content">
-        <ul>
-          <li><a href="{% url 'index' %}">Homepage</a></li>
-          <li><a href="{% url 'all_meals' %}">List of All Meals</a></li>
-          <li><a href="{% url 'edit_ingredients' %}">Edit Ingredients</a></li>
-          <li>item 4</li>
-          <li>item 5</li>
+        <ul class="dropdown-links">
+          <li class="dropdown-link">
+            <a href="{% url 'index' %}">Homepage</a>
+          </li>
+          <li class="dropdown-link">
+            <a href="{% url 'all_meals' %}">List of All Meals</a>
+          </li>
+          <li class="dropdown-link">
+            <a href="{% url 'edit_ingredients' %}">Edit Ingredients</a>
+          </li>
+          <li class="dropdown-link">
+            item 4
+          </li>
+          <li class="dropdown-link">
+            item 5
+          </li>
         </ul>
       </div>
     </c>
